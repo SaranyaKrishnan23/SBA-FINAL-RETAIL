@@ -1,0 +1,36 @@
+<html>
+
+<head></head>
+
+<body>
+	<form>
+		<div class="form-group">
+			
+			<div class="w-25 p-3">
+				<label for="inputName">Product Name</label>
+				<input type="text" class="form-control" size="20" #name placeholder="Enter Product Name">
+			</div>
+			<div class="w-25 p-3">
+				<label for="inputCategory">Category</label>
+				<input type="text" class="form-control" #category placeholder="Enter the Category Name">
+			</div>
+			<div class="w-25 p-3">
+				<label for="inputPrice">Price</label>
+				<input type="text" class="form-control" #price placeholder="Enter the Price Amount">
+			</div>
+			<div class="w-25 p-3">
+				<label for="inputType">Product Type</label>
+				<input type="text" class="form-control" #type placeholder="Enter the Type Name">
+			</div>
+			<div class="w-25 p-3">
+				<label for="inputDate">Expiry Date</label>
+				<input type="date" class="form-control" #expiry_date>
+			</div>
+		</div>
+		&nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-primary" (click)="addProduct(null,name.value,price.value,category.value,type.value,expiry_date.value)" >Submit</button>
+		
+	
+	</form>
+</body>
+
+</html>
